@@ -1,9 +1,7 @@
 package com.dennis;
 
-import com.dennis.arrstr.StringCompressionTest;
-import com.dennis.arrstr.StringPermutationTest;
-import com.dennis.arrstr.TwoSumTest;
-import com.dennis.arrstr.UniqueStringTest;
+import com.dennis.arrstr.*;
+import com.dennis.linkedlist.*;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
@@ -16,7 +14,11 @@ import org.junit.runners.Suite;
     TwoSumTest.class,
     UniqueStringTest.class,
     StringPermutationTest.class,
-    StringCompressionTest.class
+    StringCompressionTest.class,
+    ReverseLinkedListTest.class,
+    CycleDetectionTest.class,
+    MiddleLinkedListTest.class,
+    RotateLinkedListTest.class,
 })
  public class AppTest {
 }
