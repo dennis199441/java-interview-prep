@@ -2,6 +2,7 @@ package com.dennis;
 
 import com.dennis.arrstr.*;
 import com.dennis.linkedlist.*;
+import com.dennis.tree.*;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
@@ -19,6 +20,9 @@ import org.junit.runners.Suite;
     CycleDetectionTest.class,
     MiddleLinkedListTest.class,
     RotateLinkedListTest.class,
+    TraversalTest.class,
+    IdenticalTreeTest.class,
+    InvertTreeTest.class,
 })
  public class AppTest {
 }
