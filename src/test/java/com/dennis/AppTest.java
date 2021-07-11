@@ -1,6 +1,7 @@
 package com.dennis;
 
 import com.dennis.arrstr.*;
+import com.dennis.heap.*;
 import com.dennis.linkedlist.*;
 import com.dennis.tree.*;
 
@@ -23,6 +24,8 @@ import org.junit.runners.Suite;
     TraversalTest.class,
     IdenticalTreeTest.class,
     InvertTreeTest.class,
+    RunningMedianTest.class,
+    MergeNSortedArrayTest.class,
 })
  public class AppTest {
 }
