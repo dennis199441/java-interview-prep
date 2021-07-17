@@ -26,6 +26,7 @@ import org.junit.runners.Suite;
     InvertTreeTest.class,
     RunningMedianTest.class,
     MergeNSortedArrayTest.class,
+    TreeLeftViewTest.class,
 })
  public class AppTest {
 }
