@@ -1,7 +1,7 @@
-package com.dennis.designpattern.strategypattern;
+package com.dennis.designpattern.strategy;
 
-import com.dennis.designpattern.strategypattern.eatstrategies.IEatStrategy;
-import com.dennis.designpattern.strategypattern.flystrategies.IFlyStrategy;
+import com.dennis.designpattern.strategy.eatstrategies.IEatStrategy;
+import com.dennis.designpattern.strategy.flystrategies.IFlyStrategy;
 
 public abstract class Bird {
   
