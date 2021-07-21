@@ -62,3 +62,41 @@ for (int i = 1; i <= 10; i++) {
     channel.notifyObervers();
 }
 ```
+
+---
+
+## Singleton pattern
+Singleton pattern is a software design pattern that restricts the instantiation of a class to one "single" instance. This is useful when exactly one object is needed to coordinate actions across the system.
+
+### Motivation
+The singleton design pattern solves problems like:
+
+1. How can it be ensured that a class has only one instance?
+2. How can the sole instance of a class be accessed easily?
+3. How can a class control its instantiation?
+4. How can the number of instances of a class be restricted?
+5. How can a global variable be accessed?
+
+The singleton design pattern describes how to solve such problems:
+
+1. Hide the constructor of the class.
+2. Define a public static operation (getInstance()) that returns the sole instance of the class.
+
+The key idea in this pattern is to make the class itself responsible for controlling its instantiation (that it is instantiated only once).
+
+The hidden constructor (declared private or protected) ensures that the class can never be instantiated from outside the class.
+The public static operation can be accessed easily by using the class name and operation name (Singleton.getInstance()).
+
+### Example
+Check out `com.dennis.designpattern.singleton`. A Singleton should be a private constructor and a public and static `getInstance()` method, which returns the instance of the class.
+
+```java
+// This will return a new instance of Singleton class.
+Singleton instance1 = Singleton.getInstance(); 
+
+// Error: The constructor Singleton() is not visible
+Singleton instance2 = new Singleton();
+
+// instance1 and instance2 are the same instance (having same memory address as well).
+Singleton instance3 = Singleton.getInstance(); 
+```
